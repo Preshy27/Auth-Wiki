@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar" id="sidebar">
+        <i class="ph-x" onclick="hideMenu()"></i>
+        <h2><i class="ph ph-ladder"></i>Auth Wiki</h2>
+        <hr>
+       <ul>
+            <li><a href="#"><i class="ph ph-books"></i>Browse Library</a></li>
+            <li><a href="#"><i class="ph ph-users-three"></i>Community</a></li>
+            <li><a href="#"><i class="ph ph-gear-six"></i>Settings</a></li>
+            <li class="help-nav"><a href="#"><i class="ph ph-question"></i>Help</a></li>
+            <li><a href="#"><i class="ph ph-sign-out"></i>Logout</a></li>
+        </ul>
+      </div>
+      <i class="menu ph-list" onclick="showMenu()"></i>
+      <div class="main-content">
+        <div class="search">
+          <div class="filter" id="filter">
+            <h4>Filter by</h4>
+            <br>
+            <form class="filter-txt">
+              <input
+                type="radio"
+                id="downloaded"
+                name="filter"
+              />
+              Most Downloaded<br /><br>
+              <input
+                type="radio"
+                id="liked"
+                name="filter"
+              />
+              Most Liked<br /><br>
+              <input
+                type="radio"
+                id="commented"
+                name="filter"
+              />
+              Most Commented<br /><br>
+              <div class="button">
+                <input type="submit" value="Cancel" id="cancel-btn" />
+                <input type="submit" value="Apply" id="apply-btn" />
+              </div>
+            </form>
+          </div>
+          <div class="notification" id="notification">
+            <h4>Notifications</h4>
+            <div class="notifs">
+              <p>Your password has been successfully changed</p>
+              <img src="https://i.ibb.co/JHy14QX/Frame-22.png" alt="Frame-22" width="50"></a>
+            </div>
+            <div class="notifs">
+              <p>You downloaded 2FA Authentication Code</p>
+              <img src="https://i.ibb.co/6ySDVDc/Frame-22-1.png" alt="Frame-22-1" width="50"></a>
+            </div>
+            <div class="notifs release">
+              <p>A new authentication<br> has just been released</p>
+              <img src="https://i.ibb.co/PxxbKZm/Frame-22-2.png" alt="Frame-22-2" width="50">
+            </div>
+          </div>
+          <form>
+            <i class="ph-magnifying-glass"></i>
+            <input
+              id="search-bar"
+              type="text"
+              placeholder="What are you looking for?"
+            />
+          </form>
+          <i class="ph-sliders" onclick="showFilter()"></i>
+          <i class="ph-bell" onclick="showNotification()"></i>
+        </div>
+        <div class="documentation">
+          <div class="documentation-txt">
+            <h2>
+              Welcome to the Auth Wiki<br />
+              Documentation
+            </h2>
+            <p>
+              This platform would assist you in gaining<br />
+              access to all the necessary library<br />
+              authentication codes, provide examples of<br />
+              how to use the authentication codes, and<br />
+              allow you to interact with the community.
+            </p>
+          </div>
+          <img
+            id="documentation-img"
+            src="https://images.pexels.com/photos/1181273/pexels-photo-1181273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            width="275"
+            height="220"
+          />
+        </div>
+        <div class="authentication">
+          <h2>Popular Authentication Codes</h2>
+          <div class="container-1">
+            <div>
+              <img
+                src="https://i.ibb.co/Ch5w2Z5/What-is-Two-factor-Authentication-Definition-Process-and-Best-Practices.jpg"
+                alt="What-is-Two-factor-Authentication-Definition-Process-and-Best-Practices"
+                height="221"
+                width="210"
+              />
+              <p>
+                2FA<br />
+                Authentication
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://i.ibb.co/514gxVY/biometric-authentication-og.jpg"
+                alt="biometric-authentication-og"
+                height="221"
+                width="210"
+              />
+              <p>
+                Biometric<br />
+                Authentication
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://i.ibb.co/nP1sHbN/pexels-mizuno-k-12899151.jpg"
+                alt="pexels-mizuno-k-12899151"
+                height="221"
+                width="210"
+              />
+              <p>
+                Token-based<br />
+                Authentication
+              </p>
+            </div>
+          </div>
+        </div>
+          <div class="start">
+            <h2>Getting Started</h2>
+            <div class="container-2">
+              <div>
+                <img
+                  src="https://i.ibb.co/YbpdVvm/Frame-8.png"
+                  alt="Frame-8"
+                  height="176"
+                  width="176"
+                />
+                <p>
+                  You can use the search option to<br />
+                  look for the authentication code you<br />
+                  need, and you can also used filter based<br />
+                  on your needs. You can also begin by<br />
+                  selecting one of our most popular<br />
+                  authentication codes.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://i.ibb.co/6mhpXk5/Frame-8-1.png"
+                  alt="Frame-8-1"
+                  height="176"
+                  width="176"
+                />
+                <p>
+                  After identifying the authentication<br />
+                  code you require, you can examine<br />
+                  the various examples, read the code,<br />
+                  description and download it to your<br />
+                  local computer.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="https://i.ibb.co/Mg75jBC/Frame-8-2.png"
+                  alt="Frame-8-2"
+                  height="176"
+                  width="176"
+                />
+                <p>
+                  You can also participate in the<br />
+                  community by leaving comments<br />
+                  and liking thr authentication<br />
+                  codes. You can also bookmark<br />
+                  your favorite codes.
+                </p>
+              </div>
+            </div>
+          </div>
+        <footer>
+          <div class="footer">
+            <h3><i class="ph ph-ladder"></i>Auth Wiki</h3>
+            <div class="container-3">
+              <p>2021 - 2022 Auth Wiki® Inc. All Rights Reserved.</p>
+              <p>Privacy Policy</p>
+              <p>Terms</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+
+      //Javascript to toggle side-bar
+      var sidebar = document.getElementById("sidebar");
+
+      function showMenu() {
+        sidebar.style.left = "0";
+      }
+
+      function hideMenu() {
+        sidebar.style.left = "-300px";
+      }
+
+      var notification = document.getElementById("notification")
+
+      function showNotification() {
+        if (notification.style.display === "none") {
+          notification.style.display = "block";
+          filter.style.display = "none";
+        }
+        else {
+          notification.style.display = "none";
+        }
+      }
+
+      var filter = document.getElementById("filter");
+
+      function showFilter() {
+        if (filter.style.display === "none") {
+          filter.style.display = "block";
+          notification.style.display = "none";
+        }
+        else {
+          filter.style.display = "none";
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
